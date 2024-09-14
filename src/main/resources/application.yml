@@ -1,0 +1,63 @@
+server:
+  port: 5050
+  servlet:
+    context-path: /api
+    session:
+      timeout: PT60M
+
+ws:
+  port: 5051
+
+project:
+  folder: d:/IDEProject/easyChat/src/main/resources/static
+
+log:
+  root:
+    level: debug
+
+spring:
+  servlet:
+    multipart:
+      max-file-size: 500MB
+      max-request-size: 500MB
+  mvc:
+    throw-exception-if-no-handler-found: true
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 123456
+    url: jdbc:mysql://localhost:3306/easychat
+    hikari:
+      pool-name: HikariCPDatasource
+      minimum-idle: 5
+      idle-timeout: 180000
+      maximum-pool-size: 10
+      auto-commit: true
+      max-lifetime: 1800000
+      connection-timeout: 30000
+      connection-test-query: SELECT 1
+  web:
+    resources:
+      add-mappings: false
+  redis:
+    database: 0
+    host: 192.168.13.130
+    port: 6379
+    password: lihao
+    #连接超时时间
+    timeout: 2000
+    jedis:
+      pool:
+        #连接池最大连接数
+        max-active: 20
+        #连接池最大阻塞时间（-1表示无限制）
+        max-wait: -1
+        #连接池中的最大空闲连接
+        max-idle: 10
+        #连接池最小空闲连接
+        min-idle: 0
+
+admin:
+  emails: 805459342@qq.com
+
+dev: false

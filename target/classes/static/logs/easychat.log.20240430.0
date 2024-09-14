@@ -1,0 +1,317 @@
+2024-04-30 17:28:15 [INFO][com.lihao.EasyChatApplication][logStarting][55]-> Starting EasyChatApplication using Java 1.8.0_411 on LAPTOP-1EEQ1T4S with PID 14816 (D:\IDEProject\easyChat\target\classes started by lihao in D:\IDEProject\easyChat)
+2024-04-30 17:28:15 [INFO][org.hibernate.validator.internal.util.Version][<clinit>][21]-> HV000001: Hibernate Validator 6.2.0.Final
+2024-04-30 17:28:15 [INFO][com.lihao.EasyChatApplication][logStartupProfileInfo][635]-> No active profile set, falling back to default profiles: default
+2024-04-30 17:28:16 [INFO][org.springframework.data.repository.config.RepositoryConfigurationDelegate][multipleStoresDetected][262]-> Multiple Spring Data modules found, entering strict repository configuration mode!
+2024-04-30 17:28:16 [INFO][org.springframework.data.repository.config.RepositoryConfigurationDelegate][registerRepositoriesIn][132]-> Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-04-30 17:28:16 [INFO][org.springframework.data.repository.config.RepositoryConfigurationDelegate][registerRepositoriesIn][201]-> Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+2024-04-30 17:28:16 [INFO][org.springframework.boot.web.embedded.tomcat.TomcatWebServer][initialize][108]-> Tomcat initialized with port(s): 5050 (http)
+2024-04-30 17:28:16 [INFO][org.apache.coyote.http11.Http11NioProtocol][log][173]-> Initializing ProtocolHandler ["http-nio-5050"]
+2024-04-30 17:28:16 [INFO][org.apache.catalina.core.StandardService][log][173]-> Starting service [Tomcat]
+2024-04-30 17:28:16 [INFO][org.apache.catalina.core.StandardEngine][log][173]-> Starting Servlet engine: [Apache Tomcat/9.0.55]
+2024-04-30 17:28:16 [WARN][org.apache.catalina.core.AprLifecycleListener][log][173]-> This listener must only be nested within Server elements, but is in [TomcatEmbeddedContext].
+2024-04-30 17:28:16 [INFO][org.apache.catalina.core.AprLifecycleListener][log][173]-> Loaded Apache Tomcat Native library [1.3.0] using APR version [1.7.4].
+2024-04-30 17:28:16 [INFO][org.apache.catalina.core.AprLifecycleListener][log][173]-> APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2024-04-30 17:28:16 [INFO][org.apache.catalina.core.AprLifecycleListener][log][173]-> APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2024-04-30 17:28:16 [INFO][org.apache.catalina.core.AprLifecycleListener][log][173]-> OpenSSL successfully initialized [OpenSSL 3.0.13 30 Jan 2024]
+2024-04-30 17:28:16 [INFO][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api]][log][173]-> Initializing Spring embedded WebApplicationContext
+2024-04-30 17:28:16 [INFO][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext][prepareWebApplicationContext][290]-> Root WebApplicationContext: initialization completed in 1730 ms
+2024-04-30 17:28:19 [INFO][org.apache.coyote.http11.Http11NioProtocol][log][173]-> Starting ProtocolHandler ["http-nio-5050"]
+2024-04-30 17:28:19 [INFO][org.springframework.boot.web.embedded.tomcat.TomcatWebServer][start][220]-> Tomcat started on port(s): 5050 (http) with context path '/api'
+2024-04-30 17:28:19 [INFO][com.lihao.EasyChatApplication][logStarted][61]-> Started EasyChatApplication in 4.524 seconds (JVM running for 5.715)
+2024-04-30 17:28:19 [INFO][com.zaxxer.hikari.HikariDataSource][getConnection][110]-> HikariCPDatasource - Starting...
+2024-04-30 17:28:21 [ERROR][com.zaxxer.hikari.pool.HikariPool][throwPoolInitializationException][594]-> HikariCPDatasource - Exception during pool initialization.
+java.sql.SQLSyntaxErrorException: Unknown database 'easychatet'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:833)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:453)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at com.lihao.InitRun.run(InitRun.java:27)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:748)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:309)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1290)
+	at com.lihao.EasyChatApplication.main(EasyChatApplication.java:16)
+2024-04-30 17:28:21 [ERROR][com.lihao.InitRun][run][31]-> 数据库配置错误，请检查数据库配置！
+2024-04-30 17:29:13 [INFO][com.lihao.EasyChatApplication][logStarting][55]-> Starting EasyChatApplication using Java 1.8.0_411 on LAPTOP-1EEQ1T4S with PID 16756 (D:\IDEProject\easyChat\target\classes started by lihao in D:\IDEProject\easyChat)
+2024-04-30 17:29:13 [INFO][org.hibernate.validator.internal.util.Version][<clinit>][21]-> HV000001: Hibernate Validator 6.2.0.Final
+2024-04-30 17:29:13 [INFO][com.lihao.EasyChatApplication][logStartupProfileInfo][635]-> No active profile set, falling back to default profiles: default
+2024-04-30 17:29:14 [INFO][org.springframework.data.repository.config.RepositoryConfigurationDelegate][multipleStoresDetected][262]-> Multiple Spring Data modules found, entering strict repository configuration mode!
+2024-04-30 17:29:14 [INFO][org.springframework.data.repository.config.RepositoryConfigurationDelegate][registerRepositoriesIn][132]-> Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-04-30 17:29:14 [INFO][org.springframework.data.repository.config.RepositoryConfigurationDelegate][registerRepositoriesIn][201]-> Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+2024-04-30 17:29:14 [INFO][org.springframework.boot.web.embedded.tomcat.TomcatWebServer][initialize][108]-> Tomcat initialized with port(s): 5050 (http)
+2024-04-30 17:29:14 [INFO][org.apache.coyote.http11.Http11NioProtocol][log][173]-> Initializing ProtocolHandler ["http-nio-5050"]
+2024-04-30 17:29:14 [INFO][org.apache.catalina.core.StandardService][log][173]-> Starting service [Tomcat]
+2024-04-30 17:29:14 [INFO][org.apache.catalina.core.StandardEngine][log][173]-> Starting Servlet engine: [Apache Tomcat/9.0.55]
+2024-04-30 17:29:14 [WARN][org.apache.catalina.core.AprLifecycleListener][log][173]-> This listener must only be nested within Server elements, but is in [TomcatEmbeddedContext].
+2024-04-30 17:29:14 [INFO][org.apache.catalina.core.AprLifecycleListener][log][173]-> Loaded Apache Tomcat Native library [1.3.0] using APR version [1.7.4].
+2024-04-30 17:29:14 [INFO][org.apache.catalina.core.AprLifecycleListener][log][173]-> APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2024-04-30 17:29:14 [INFO][org.apache.catalina.core.AprLifecycleListener][log][173]-> APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2024-04-30 17:29:14 [INFO][org.apache.catalina.core.AprLifecycleListener][log][173]-> OpenSSL successfully initialized [OpenSSL 3.0.13 30 Jan 2024]
+2024-04-30 17:29:14 [INFO][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api]][log][173]-> Initializing Spring embedded WebApplicationContext
+2024-04-30 17:29:14 [INFO][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext][prepareWebApplicationContext][290]-> Root WebApplicationContext: initialization completed in 1144 ms
+2024-04-30 17:29:16 [INFO][org.apache.coyote.http11.Http11NioProtocol][log][173]-> Starting ProtocolHandler ["http-nio-5050"]
+2024-04-30 17:29:16 [INFO][org.springframework.boot.web.embedded.tomcat.TomcatWebServer][start][220]-> Tomcat started on port(s): 5050 (http) with context path '/api'
+2024-04-30 17:29:16 [INFO][com.lihao.EasyChatApplication][logStarted][61]-> Started EasyChatApplication in 3.425 seconds (JVM running for 4.494)
+2024-04-30 17:29:16 [INFO][com.zaxxer.hikari.HikariDataSource][getConnection][110]-> HikariCPDatasource - Starting...
+2024-04-30 17:29:17 [INFO][com.zaxxer.hikari.HikariDataSource][getConnection][123]-> HikariCPDatasource - Start completed.
+2024-04-30 17:29:18 [INFO][com.lihao.InitRun][run][29]-> 服务启动成功，可以开始愉快的开发了！
+2024-04-30 17:31:08 [INFO][com.zaxxer.hikari.HikariDataSource][close][350]-> HikariCPDatasource - Shutdown initiated...
+2024-04-30 17:31:08 [INFO][com.zaxxer.hikari.HikariDataSource][close][352]-> HikariCPDatasource - Shutdown completed.
+2024-04-30 17:31:19 [INFO][com.lihao.EasyChatApplication][logStarting][55]-> Starting EasyChatApplication using Java 1.8.0_411 on LAPTOP-1EEQ1T4S with PID 16080 (D:\IDEProject\easyChat\target\classes started by lihao in D:\IDEProject\easyChat)
+2024-04-30 17:31:19 [INFO][org.hibernate.validator.internal.util.Version][<clinit>][21]-> HV000001: Hibernate Validator 6.2.0.Final
+2024-04-30 17:31:19 [INFO][com.lihao.EasyChatApplication][logStartupProfileInfo][635]-> No active profile set, falling back to default profiles: default
+2024-04-30 17:31:20 [INFO][org.springframework.data.repository.config.RepositoryConfigurationDelegate][multipleStoresDetected][262]-> Multiple Spring Data modules found, entering strict repository configuration mode!
+2024-04-30 17:31:20 [INFO][org.springframework.data.repository.config.RepositoryConfigurationDelegate][registerRepositoriesIn][132]-> Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-04-30 17:31:20 [INFO][org.springframework.data.repository.config.RepositoryConfigurationDelegate][registerRepositoriesIn][201]-> Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2024-04-30 17:31:21 [INFO][org.springframework.boot.web.embedded.tomcat.TomcatWebServer][initialize][108]-> Tomcat initialized with port(s): 5050 (http)
+2024-04-30 17:31:21 [INFO][org.apache.coyote.http11.Http11NioProtocol][log][173]-> Initializing ProtocolHandler ["http-nio-5050"]
+2024-04-30 17:31:21 [INFO][org.apache.catalina.core.StandardService][log][173]-> Starting service [Tomcat]
+2024-04-30 17:31:21 [INFO][org.apache.catalina.core.StandardEngine][log][173]-> Starting Servlet engine: [Apache Tomcat/9.0.55]
+2024-04-30 17:31:21 [WARN][org.apache.catalina.core.AprLifecycleListener][log][173]-> This listener must only be nested within Server elements, but is in [TomcatEmbeddedContext].
+2024-04-30 17:31:21 [INFO][org.apache.catalina.core.AprLifecycleListener][log][173]-> Loaded Apache Tomcat Native library [1.3.0] using APR version [1.7.4].
+2024-04-30 17:31:21 [INFO][org.apache.catalina.core.AprLifecycleListener][log][173]-> APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2024-04-30 17:31:21 [INFO][org.apache.catalina.core.AprLifecycleListener][log][173]-> APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2024-04-30 17:31:21 [INFO][org.apache.catalina.core.AprLifecycleListener][log][173]-> OpenSSL successfully initialized [OpenSSL 3.0.13 30 Jan 2024]
+2024-04-30 17:31:21 [INFO][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api]][log][173]-> Initializing Spring embedded WebApplicationContext
+2024-04-30 17:31:21 [INFO][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext][prepareWebApplicationContext][290]-> Root WebApplicationContext: initialization completed in 1635 ms
+2024-04-30 17:31:23 [INFO][org.apache.coyote.http11.Http11NioProtocol][log][173]-> Starting ProtocolHandler ["http-nio-5050"]
+2024-04-30 17:31:23 [INFO][org.springframework.boot.web.embedded.tomcat.TomcatWebServer][start][220]-> Tomcat started on port(s): 5050 (http) with context path '/api'
+2024-04-30 17:31:23 [INFO][com.lihao.EasyChatApplication][logStarted][61]-> Started EasyChatApplication in 4.416 seconds (JVM running for 5.659)
+2024-04-30 17:31:23 [INFO][com.zaxxer.hikari.HikariDataSource][getConnection][110]-> HikariCPDatasource - Starting...
+2024-04-30 17:31:24 [INFO][com.zaxxer.hikari.HikariDataSource][getConnection][123]-> HikariCPDatasource - Start completed.
+2024-04-30 17:31:25 [INFO][com.lihao.InitRun][run][29]-> 服务启动成功，可以开始愉快的开发了！
+2024-04-30 17:35:24 [INFO][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api]][log][173]-> Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-30 17:35:24 [INFO][org.springframework.web.servlet.DispatcherServlet][initServletBean][525]-> Initializing Servlet 'dispatcherServlet'
+2024-04-30 17:35:24 [INFO][org.springframework.web.servlet.DispatcherServlet][initServletBean][547]-> Completed initialization in 2 ms
+2024-04-30 17:50:24 [INFO][com.zaxxer.hikari.HikariDataSource][close][350]-> HikariCPDatasource - Shutdown initiated...
+2024-04-30 17:50:24 [INFO][com.zaxxer.hikari.HikariDataSource][close][352]-> HikariCPDatasource - Shutdown completed.
+2024-04-30 17:50:35 [INFO][org.hibernate.validator.internal.util.Version][<clinit>][21]-> HV000001: Hibernate Validator 6.2.0.Final
+2024-04-30 17:50:35 [INFO][com.lihao.EasyChatApplication][logStarting][55]-> Starting EasyChatApplication using Java 1.8.0_411 on LAPTOP-1EEQ1T4S with PID 29176 (D:\IDEProject\easyChat\target\classes started by lihao in D:\IDEProject\easyChat)
+2024-04-30 17:50:35 [INFO][com.lihao.EasyChatApplication][logStartupProfileInfo][635]-> No active profile set, falling back to default profiles: default
+2024-04-30 17:50:36 [INFO][org.springframework.data.repository.config.RepositoryConfigurationDelegate][multipleStoresDetected][262]-> Multiple Spring Data modules found, entering strict repository configuration mode!
+2024-04-30 17:50:36 [INFO][org.springframework.data.repository.config.RepositoryConfigurationDelegate][registerRepositoriesIn][132]-> Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-04-30 17:50:36 [INFO][org.springframework.data.repository.config.RepositoryConfigurationDelegate][registerRepositoriesIn][201]-> Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+2024-04-30 17:50:36 [INFO][org.springframework.boot.web.embedded.tomcat.TomcatWebServer][initialize][108]-> Tomcat initialized with port(s): 5050 (http)
+2024-04-30 17:50:36 [INFO][org.apache.coyote.http11.Http11NioProtocol][log][173]-> Initializing ProtocolHandler ["http-nio-5050"]
+2024-04-30 17:50:36 [INFO][org.apache.catalina.core.StandardService][log][173]-> Starting service [Tomcat]
+2024-04-30 17:50:36 [INFO][org.apache.catalina.core.StandardEngine][log][173]-> Starting Servlet engine: [Apache Tomcat/9.0.55]
+2024-04-30 17:50:36 [WARN][org.apache.catalina.core.AprLifecycleListener][log][173]-> This listener must only be nested within Server elements, but is in [TomcatEmbeddedContext].
+2024-04-30 17:50:36 [INFO][org.apache.catalina.core.AprLifecycleListener][log][173]-> Loaded Apache Tomcat Native library [1.3.0] using APR version [1.7.4].
+2024-04-30 17:50:36 [INFO][org.apache.catalina.core.AprLifecycleListener][log][173]-> APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2024-04-30 17:50:36 [INFO][org.apache.catalina.core.AprLifecycleListener][log][173]-> APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2024-04-30 17:50:36 [INFO][org.apache.catalina.core.AprLifecycleListener][log][173]-> OpenSSL successfully initialized [OpenSSL 3.0.13 30 Jan 2024]
+2024-04-30 17:50:36 [INFO][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api]][log][173]-> Initializing Spring embedded WebApplicationContext
+2024-04-30 17:50:36 [INFO][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext][prepareWebApplicationContext][290]-> Root WebApplicationContext: initialization completed in 1338 ms
+2024-04-30 17:50:38 [INFO][org.apache.coyote.http11.Http11NioProtocol][log][173]-> Starting ProtocolHandler ["http-nio-5050"]
+2024-04-30 17:50:38 [INFO][org.springframework.boot.web.embedded.tomcat.TomcatWebServer][start][220]-> Tomcat started on port(s): 5050 (http) with context path '/api'
+2024-04-30 17:50:38 [INFO][com.lihao.EasyChatApplication][logStarted][61]-> Started EasyChatApplication in 3.747 seconds (JVM running for 4.833)
+2024-04-30 17:50:38 [INFO][com.zaxxer.hikari.HikariDataSource][getConnection][110]-> HikariCPDatasource - Starting...
+2024-04-30 17:50:39 [INFO][com.zaxxer.hikari.HikariDataSource][getConnection][123]-> HikariCPDatasource - Start completed.
+2024-04-30 17:50:40 [INFO][com.lihao.InitRun][run][29]-> 服务启动成功，可以开始愉快的开发了！
+2024-04-30 18:05:27 [INFO][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api]][log][173]-> Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-30 18:05:27 [INFO][org.springframework.web.servlet.DispatcherServlet][initServletBean][525]-> Initializing Servlet 'dispatcherServlet'
+2024-04-30 18:05:27 [INFO][org.springframework.web.servlet.DispatcherServlet][initServletBean][547]-> Completed initialization in 1 ms
+2024-04-30 18:08:38 [ERROR][com.lihao.controller.AGlobalExceptionHandlerController][handleException][25]-> 请求错误，请求地址http://localhost:5050/api/account/login,错误信息:
+com.lihao.exception.BusinessException: 账号或密码不对！
+2024-04-30 18:09:19 [ERROR][com.lihao.controller.AGlobalExceptionHandlerController][handleException][25]-> 请求错误，请求地址http://localhost:5050/api/account/login,错误信息:
+com.lihao.exception.BusinessException: 图片验证码不正确！
+2024-04-30 18:11:31 [INFO][com.zaxxer.hikari.HikariDataSource][close][350]-> HikariCPDatasource - Shutdown initiated...
+2024-04-30 18:11:31 [INFO][com.zaxxer.hikari.HikariDataSource][close][352]-> HikariCPDatasource - Shutdown completed.
+2024-04-30 18:11:41 [INFO][org.hibernate.validator.internal.util.Version][<clinit>][21]-> HV000001: Hibernate Validator 6.2.0.Final
+2024-04-30 18:11:41 [INFO][com.lihao.EasyChatApplication][logStarting][55]-> Starting EasyChatApplication using Java 1.8.0_411 on LAPTOP-1EEQ1T4S with PID 19228 (D:\IDEProject\easyChat\target\classes started by lihao in D:\IDEProject\easyChat)
+2024-04-30 18:11:41 [INFO][com.lihao.EasyChatApplication][logStartupProfileInfo][635]-> No active profile set, falling back to default profiles: default
+2024-04-30 18:11:42 [INFO][org.springframework.data.repository.config.RepositoryConfigurationDelegate][multipleStoresDetected][262]-> Multiple Spring Data modules found, entering strict repository configuration mode!
+2024-04-30 18:11:42 [INFO][org.springframework.data.repository.config.RepositoryConfigurationDelegate][registerRepositoriesIn][132]-> Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-04-30 18:11:42 [INFO][org.springframework.data.repository.config.RepositoryConfigurationDelegate][registerRepositoriesIn][201]-> Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+2024-04-30 18:11:42 [INFO][org.springframework.boot.web.embedded.tomcat.TomcatWebServer][initialize][108]-> Tomcat initialized with port(s): 5050 (http)
+2024-04-30 18:11:42 [INFO][org.apache.coyote.http11.Http11NioProtocol][log][173]-> Initializing ProtocolHandler ["http-nio-5050"]
+2024-04-30 18:11:42 [INFO][org.apache.catalina.core.StandardService][log][173]-> Starting service [Tomcat]
+2024-04-30 18:11:42 [INFO][org.apache.catalina.core.StandardEngine][log][173]-> Starting Servlet engine: [Apache Tomcat/9.0.55]
+2024-04-30 18:11:42 [WARN][org.apache.catalina.core.AprLifecycleListener][log][173]-> This listener must only be nested within Server elements, but is in [TomcatEmbeddedContext].
+2024-04-30 18:11:42 [INFO][org.apache.catalina.core.AprLifecycleListener][log][173]-> Loaded Apache Tomcat Native library [1.3.0] using APR version [1.7.4].
+2024-04-30 18:11:42 [INFO][org.apache.catalina.core.AprLifecycleListener][log][173]-> APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2024-04-30 18:11:42 [INFO][org.apache.catalina.core.AprLifecycleListener][log][173]-> APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2024-04-30 18:11:42 [INFO][org.apache.catalina.core.AprLifecycleListener][log][173]-> OpenSSL successfully initialized [OpenSSL 3.0.13 30 Jan 2024]
+2024-04-30 18:11:42 [INFO][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api]][log][173]-> Initializing Spring embedded WebApplicationContext
+2024-04-30 18:11:42 [INFO][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext][prepareWebApplicationContext][290]-> Root WebApplicationContext: initialization completed in 1254 ms
+2024-04-30 18:11:44 [INFO][org.apache.coyote.http11.Http11NioProtocol][log][173]-> Starting ProtocolHandler ["http-nio-5050"]
+2024-04-30 18:11:44 [INFO][org.springframework.boot.web.embedded.tomcat.TomcatWebServer][start][220]-> Tomcat started on port(s): 5050 (http) with context path '/api'
+2024-04-30 18:11:44 [INFO][com.lihao.EasyChatApplication][logStarted][61]-> Started EasyChatApplication in 3.649 seconds (JVM running for 4.713)
+2024-04-30 18:11:44 [INFO][com.zaxxer.hikari.HikariDataSource][getConnection][110]-> HikariCPDatasource - Starting...
+2024-04-30 18:11:45 [INFO][com.zaxxer.hikari.HikariDataSource][getConnection][123]-> HikariCPDatasource - Start completed.
+2024-04-30 18:11:46 [INFO][com.lihao.InitRun][run][29]-> 服务启动成功，可以开始愉快的开发了！
+2024-04-30 18:12:50 [INFO][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api]][log][173]-> Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-30 18:12:50 [INFO][org.springframework.web.servlet.DispatcherServlet][initServletBean][525]-> Initializing Servlet 'dispatcherServlet'
+2024-04-30 18:12:50 [INFO][org.springframework.web.servlet.DispatcherServlet][initServletBean][547]-> Completed initialization in 1 ms
+2024-04-30 18:13:41 [ERROR][com.lihao.controller.AGlobalExceptionHandlerController][handleException][25]-> 请求错误，请求地址http://localhost:5050/api/account/login,错误信息:
+com.lihao.exception.BusinessException: 图片验证码不正确！
+2024-04-30 18:15:12 [ERROR][com.lihao.controller.AGlobalExceptionHandlerController][handleException][25]-> 请求错误，请求地址http://localhost:5050/api/account/login,错误信息:
+com.lihao.exception.BusinessException: 图片验证码不正确！
+2024-04-30 18:15:54 [ERROR][com.lihao.controller.AGlobalExceptionHandlerController][handleException][25]-> 请求错误，请求地址http://localhost:5050/api/account/login,错误信息:
+com.lihao.exception.BusinessException: 账号或密码不对！
+2024-04-30 18:16:22 [ERROR][com.lihao.controller.AGlobalExceptionHandlerController][handleException][25]-> 请求错误，请求地址http://localhost:5050/api/account/login,错误信息:
+com.lihao.exception.BusinessException: 账号或密码不对！
+2024-04-30 18:16:53 [INFO][com.zaxxer.hikari.HikariDataSource][close][350]-> HikariCPDatasource - Shutdown initiated...
+2024-04-30 18:16:53 [INFO][com.zaxxer.hikari.HikariDataSource][close][352]-> HikariCPDatasource - Shutdown completed.
+2024-04-30 18:33:48 [INFO][org.hibernate.validator.internal.util.Version][<clinit>][21]-> HV000001: Hibernate Validator 6.2.0.Final
+2024-04-30 18:33:48 [INFO][com.lihao.EasyChatApplication][logStarting][55]-> Starting EasyChatApplication using Java 1.8.0_411 on LAPTOP-1EEQ1T4S with PID 5420 (D:\IDEProject\easyChat\target\classes started by lihao in D:\IDEProject\easyChat)
+2024-04-30 18:33:48 [INFO][com.lihao.EasyChatApplication][logStartupProfileInfo][635]-> No active profile set, falling back to default profiles: default
+2024-04-30 18:33:49 [INFO][org.springframework.data.repository.config.RepositoryConfigurationDelegate][multipleStoresDetected][262]-> Multiple Spring Data modules found, entering strict repository configuration mode!
+2024-04-30 18:33:49 [INFO][org.springframework.data.repository.config.RepositoryConfigurationDelegate][registerRepositoriesIn][132]-> Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-04-30 18:33:49 [INFO][org.springframework.data.repository.config.RepositoryConfigurationDelegate][registerRepositoriesIn][201]-> Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2024-04-30 18:33:49 [INFO][org.springframework.boot.web.embedded.tomcat.TomcatWebServer][initialize][108]-> Tomcat initialized with port(s): 5050 (http)
+2024-04-30 18:33:49 [INFO][org.apache.coyote.http11.Http11NioProtocol][log][173]-> Initializing ProtocolHandler ["http-nio-5050"]
+2024-04-30 18:33:49 [INFO][org.apache.catalina.core.StandardService][log][173]-> Starting service [Tomcat]
+2024-04-30 18:33:49 [INFO][org.apache.catalina.core.StandardEngine][log][173]-> Starting Servlet engine: [Apache Tomcat/9.0.55]
+2024-04-30 18:33:49 [WARN][org.apache.catalina.core.AprLifecycleListener][log][173]-> This listener must only be nested within Server elements, but is in [TomcatEmbeddedContext].
+2024-04-30 18:33:49 [INFO][org.apache.catalina.core.AprLifecycleListener][log][173]-> Loaded Apache Tomcat Native library [1.3.0] using APR version [1.7.4].
+2024-04-30 18:33:49 [INFO][org.apache.catalina.core.AprLifecycleListener][log][173]-> APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2024-04-30 18:33:49 [INFO][org.apache.catalina.core.AprLifecycleListener][log][173]-> APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2024-04-30 18:33:49 [INFO][org.apache.catalina.core.AprLifecycleListener][log][173]-> OpenSSL successfully initialized [OpenSSL 3.0.13 30 Jan 2024]
+2024-04-30 18:33:49 [INFO][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api]][log][173]-> Initializing Spring embedded WebApplicationContext
+2024-04-30 18:33:49 [INFO][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext][prepareWebApplicationContext][290]-> Root WebApplicationContext: initialization completed in 1479 ms
+2024-04-30 18:33:51 [INFO][org.apache.coyote.http11.Http11NioProtocol][log][173]-> Starting ProtocolHandler ["http-nio-5050"]
+2024-04-30 18:33:51 [INFO][org.springframework.boot.web.embedded.tomcat.TomcatWebServer][start][220]-> Tomcat started on port(s): 5050 (http) with context path '/api'
+2024-04-30 18:33:51 [INFO][com.lihao.EasyChatApplication][logStarted][61]-> Started EasyChatApplication in 3.901 seconds (JVM running for 4.993)
+2024-04-30 18:33:51 [INFO][com.zaxxer.hikari.HikariDataSource][getConnection][110]-> HikariCPDatasource - Starting...
+2024-04-30 18:33:52 [INFO][com.zaxxer.hikari.HikariDataSource][getConnection][123]-> HikariCPDatasource - Start completed.
+2024-04-30 18:33:53 [INFO][com.lihao.InitRun][run][29]-> 服务启动成功，可以开始愉快的开发了！
+2024-04-30 18:33:58 [INFO][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api]][log][173]-> Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-30 18:33:58 [INFO][org.springframework.web.servlet.DispatcherServlet][initServletBean][525]-> Initializing Servlet 'dispatcherServlet'
+2024-04-30 18:33:58 [INFO][org.springframework.web.servlet.DispatcherServlet][initServletBean][547]-> Completed initialization in 1 ms
+2024-04-30 18:34:59 [INFO][com.zaxxer.hikari.HikariDataSource][close][350]-> HikariCPDatasource - Shutdown initiated...
+2024-04-30 18:34:59 [INFO][com.zaxxer.hikari.HikariDataSource][close][352]-> HikariCPDatasource - Shutdown completed.
+2024-04-30 20:06:51 [INFO][org.hibernate.validator.internal.util.Version][<clinit>][21]-> HV000001: Hibernate Validator 6.2.0.Final
+2024-04-30 20:06:51 [INFO][com.lihao.EasyChatApplication][logStarting][55]-> Starting EasyChatApplication using Java 1.8.0_411 on LAPTOP-1EEQ1T4S with PID 34024 (D:\IDEProject\easyChat\target\classes started by lihao in D:\IDEProject\easyChat)
+2024-04-30 20:06:51 [INFO][com.lihao.EasyChatApplication][logStartupProfileInfo][635]-> No active profile set, falling back to default profiles: default
+2024-04-30 20:06:52 [INFO][org.springframework.data.repository.config.RepositoryConfigurationDelegate][multipleStoresDetected][262]-> Multiple Spring Data modules found, entering strict repository configuration mode!
+2024-04-30 20:06:52 [INFO][org.springframework.data.repository.config.RepositoryConfigurationDelegate][registerRepositoriesIn][132]-> Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-04-30 20:06:52 [INFO][org.springframework.data.repository.config.RepositoryConfigurationDelegate][registerRepositoriesIn][201]-> Finished Spring Data repository scanning in 14 ms. Found 0 Redis repository interfaces.
+2024-04-30 20:06:53 [INFO][org.springframework.boot.web.embedded.tomcat.TomcatWebServer][initialize][108]-> Tomcat initialized with port(s): 5050 (http)
+2024-04-30 20:06:53 [INFO][org.apache.coyote.http11.Http11NioProtocol][log][173]-> Initializing ProtocolHandler ["http-nio-5050"]
+2024-04-30 20:06:53 [INFO][org.apache.catalina.core.StandardService][log][173]-> Starting service [Tomcat]
+2024-04-30 20:06:53 [INFO][org.apache.catalina.core.StandardEngine][log][173]-> Starting Servlet engine: [Apache Tomcat/9.0.55]
+2024-04-30 20:06:53 [WARN][org.apache.catalina.core.AprLifecycleListener][log][173]-> This listener must only be nested within Server elements, but is in [TomcatEmbeddedContext].
+2024-04-30 20:06:53 [INFO][org.apache.catalina.core.AprLifecycleListener][log][173]-> Loaded Apache Tomcat Native library [1.3.0] using APR version [1.7.4].
+2024-04-30 20:06:53 [INFO][org.apache.catalina.core.AprLifecycleListener][log][173]-> APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2024-04-30 20:06:53 [INFO][org.apache.catalina.core.AprLifecycleListener][log][173]-> APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2024-04-30 20:06:53 [INFO][org.apache.catalina.core.AprLifecycleListener][log][173]-> OpenSSL successfully initialized [OpenSSL 3.0.13 30 Jan 2024]
+2024-04-30 20:06:53 [INFO][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api]][log][173]-> Initializing Spring embedded WebApplicationContext
+2024-04-30 20:06:53 [INFO][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext][prepareWebApplicationContext][290]-> Root WebApplicationContext: initialization completed in 1912 ms
+2024-04-30 20:06:55 [INFO][org.apache.coyote.http11.Http11NioProtocol][log][173]-> Starting ProtocolHandler ["http-nio-5050"]
+2024-04-30 20:06:55 [INFO][org.springframework.boot.web.embedded.tomcat.TomcatWebServer][start][220]-> Tomcat started on port(s): 5050 (http) with context path '/api'
+2024-04-30 20:06:55 [INFO][com.lihao.EasyChatApplication][logStarted][61]-> Started EasyChatApplication in 4.533 seconds (JVM running for 5.82)
+2024-04-30 20:06:55 [INFO][com.zaxxer.hikari.HikariDataSource][getConnection][110]-> HikariCPDatasource - Starting...
+2024-04-30 20:06:56 [INFO][com.zaxxer.hikari.HikariDataSource][getConnection][123]-> HikariCPDatasource - Start completed.
+2024-04-30 20:06:57 [INFO][com.lihao.InitRun][run][29]-> 服务启动成功，可以开始愉快的开发了！
+2024-04-30 20:07:11 [INFO][com.zaxxer.hikari.HikariDataSource][close][350]-> HikariCPDatasource - Shutdown initiated...
+2024-04-30 20:07:11 [INFO][com.zaxxer.hikari.HikariDataSource][close][352]-> HikariCPDatasource - Shutdown completed.
+2024-04-30 20:07:22 [INFO][com.lihao.EasyChatApplication][logStarting][55]-> Starting EasyChatApplication using Java 1.8.0_411 on LAPTOP-1EEQ1T4S with PID 3420 (D:\IDEProject\easyChat\target\classes started by lihao in D:\IDEProject\easyChat)
+2024-04-30 20:07:22 [INFO][org.hibernate.validator.internal.util.Version][<clinit>][21]-> HV000001: Hibernate Validator 6.2.0.Final
+2024-04-30 20:07:22 [INFO][com.lihao.EasyChatApplication][logStartupProfileInfo][635]-> No active profile set, falling back to default profiles: default
+2024-04-30 20:07:23 [INFO][org.springframework.data.repository.config.RepositoryConfigurationDelegate][multipleStoresDetected][262]-> Multiple Spring Data modules found, entering strict repository configuration mode!
+2024-04-30 20:07:23 [INFO][org.springframework.data.repository.config.RepositoryConfigurationDelegate][registerRepositoriesIn][132]-> Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-04-30 20:07:23 [INFO][org.springframework.data.repository.config.RepositoryConfigurationDelegate][registerRepositoriesIn][201]-> Finished Spring Data repository scanning in 14 ms. Found 0 Redis repository interfaces.
+2024-04-30 20:07:23 [INFO][org.springframework.boot.web.embedded.tomcat.TomcatWebServer][initialize][108]-> Tomcat initialized with port(s): 5050 (http)
+2024-04-30 20:07:23 [INFO][org.apache.coyote.http11.Http11NioProtocol][log][173]-> Initializing ProtocolHandler ["http-nio-5050"]
+2024-04-30 20:07:23 [INFO][org.apache.catalina.core.StandardService][log][173]-> Starting service [Tomcat]
+2024-04-30 20:07:23 [INFO][org.apache.catalina.core.StandardEngine][log][173]-> Starting Servlet engine: [Apache Tomcat/9.0.55]
+2024-04-30 20:07:23 [WARN][org.apache.catalina.core.AprLifecycleListener][log][173]-> This listener must only be nested within Server elements, but is in [TomcatEmbeddedContext].
+2024-04-30 20:07:23 [INFO][org.apache.catalina.core.AprLifecycleListener][log][173]-> Loaded Apache Tomcat Native library [1.3.0] using APR version [1.7.4].
+2024-04-30 20:07:23 [INFO][org.apache.catalina.core.AprLifecycleListener][log][173]-> APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2024-04-30 20:07:23 [INFO][org.apache.catalina.core.AprLifecycleListener][log][173]-> APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2024-04-30 20:07:23 [INFO][org.apache.catalina.core.AprLifecycleListener][log][173]-> OpenSSL successfully initialized [OpenSSL 3.0.13 30 Jan 2024]
+2024-04-30 20:07:23 [INFO][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api]][log][173]-> Initializing Spring embedded WebApplicationContext
+2024-04-30 20:07:23 [INFO][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext][prepareWebApplicationContext][290]-> Root WebApplicationContext: initialization completed in 1521 ms
+2024-04-30 20:07:25 [INFO][org.apache.coyote.http11.Http11NioProtocol][log][173]-> Starting ProtocolHandler ["http-nio-5050"]
+2024-04-30 20:07:25 [INFO][org.springframework.boot.web.embedded.tomcat.TomcatWebServer][start][220]-> Tomcat started on port(s): 5050 (http) with context path '/api'
+2024-04-30 20:07:25 [INFO][com.lihao.EasyChatApplication][logStarted][61]-> Started EasyChatApplication in 4.077 seconds (JVM running for 5.225)
+2024-04-30 20:07:25 [INFO][com.zaxxer.hikari.HikariDataSource][getConnection][110]-> HikariCPDatasource - Starting...
+2024-04-30 20:07:26 [INFO][com.zaxxer.hikari.HikariDataSource][getConnection][123]-> HikariCPDatasource - Start completed.
+2024-04-30 20:07:27 [INFO][com.lihao.InitRun][run][29]-> 服务启动成功，可以开始愉快的开发了！
+2024-04-30 20:08:12 [INFO][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api]][log][173]-> Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-30 20:08:12 [INFO][org.springframework.web.servlet.DispatcherServlet][initServletBean][525]-> Initializing Servlet 'dispatcherServlet'
+2024-04-30 20:08:12 [INFO][org.springframework.web.servlet.DispatcherServlet][initServletBean][547]-> Completed initialization in 1 ms
+2024-04-30 20:08:13 [ERROR][com.lihao.controller.AGlobalExceptionHandlerController][handleException][25]-> 请求错误，请求地址http://localhost:5050/api/group/saveGroup,错误信息:
+org.springframework.web.multipart.MultipartException: Failed to parse multipart servlet request; nested exception is javax.servlet.ServletException: org.apache.tomcat.util.http.fileupload.impl.InvalidContentTypeException: the request doesn't contain a multipart/form-data or multipart/mixed stream, content type header is null
+	at org.springframework.web.multipart.support.StandardMultipartHttpServletRequest.handleParseFailure(StandardMultipartHttpServletRequest.java:124)
+	at org.springframework.web.multipart.support.StandardMultipartHttpServletRequest.parseRequest(StandardMultipartHttpServletRequest.java:115)
+	at org.springframework.web.multipart.support.StandardMultipartHttpServletRequest.<init>(StandardMultipartHttpServletRequest.java:88)
+	at org.springframework.web.multipart.support.StandardMultipartHttpServletRequest.<init>(StandardMultipartHttpServletRequest.java:72)
+	at org.springframework.web.multipart.support.MultipartResolutionDelegate.asMultipartHttpServletRequest(MultipartResolutionDelegate.java:82)
+	at org.springframework.web.multipart.support.RequestPartServletServerHttpRequest.<init>(RequestPartServletServerHttpRequest.java:68)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestPartMethodArgumentResolver.resolveArgument(RequestPartMethodArgumentResolver.java:137)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:121)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:179)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:146)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: javax.servlet.ServletException: org.apache.tomcat.util.http.fileupload.impl.InvalidContentTypeException: the request doesn't contain a multipart/form-data or multipart/mixed stream, content type header is null
+	at org.apache.catalina.connector.Request.parseParts(Request.java:2959)
+	at org.apache.catalina.connector.Request.getParts(Request.java:2823)
+	at org.apache.catalina.connector.RequestFacade.getParts(RequestFacade.java:1098)
+	at org.springframework.web.multipart.support.StandardMultipartHttpServletRequest.parseRequest(StandardMultipartHttpServletRequest.java:95)
+	... 52 common frames omitted
+Caused by: org.apache.tomcat.util.http.fileupload.impl.InvalidContentTypeException: the request doesn't contain a multipart/form-data or multipart/mixed stream, content type header is null
+	at org.apache.tomcat.util.http.fileupload.impl.FileItemIteratorImpl.init(FileItemIteratorImpl.java:151)
+	at org.apache.tomcat.util.http.fileupload.impl.FileItemIteratorImpl.getMultiPartStream(FileItemIteratorImpl.java:205)
+	at org.apache.tomcat.util.http.fileupload.impl.FileItemIteratorImpl.findNextItem(FileItemIteratorImpl.java:224)
+	at org.apache.tomcat.util.http.fileupload.impl.FileItemIteratorImpl.<init>(FileItemIteratorImpl.java:142)
+	at org.apache.tomcat.util.http.fileupload.FileUploadBase.getItemIterator(FileUploadBase.java:252)
+	at org.apache.tomcat.util.http.fileupload.FileUploadBase.parseRequest(FileUploadBase.java:276)
+	at org.apache.catalina.connector.Request.parseParts(Request.java:2921)
+	... 55 common frames omitted
+2024-04-30 20:11:58 [INFO][com.zaxxer.hikari.HikariDataSource][close][350]-> HikariCPDatasource - Shutdown initiated...
+2024-04-30 20:11:58 [INFO][com.zaxxer.hikari.HikariDataSource][close][352]-> HikariCPDatasource - Shutdown completed.
